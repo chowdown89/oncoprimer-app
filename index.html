@@ -687,7 +687,7 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
 <aside id="panel" class="panel" hidden role="dialog" aria-modal="false" aria-labelledby="pt"><div id="pbody"></div></aside>
 
 <script type="application/json" id="manifest">{
- "updated": "2026-11-15",
+ "updated": "2026-11-22",
  "groups": [
   "Thoracic",
   "GI",
@@ -1385,7 +1385,7 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
       "Lorlatinib (pref); alectinib, brigatinib, ensartinib (FDA 12/2024, ALK-TKI-naive; eXalt3 PFS 25.8 vs 12.7 mo vs crizotinib, HR 0.56)",
       "[[CROWN]] (5-y PFS 60%, HR 0.19) · [[ALEX]]",
       "Post-lorlatinib: chemo (no IO)",
-      "Neladalkib pending (PDUFA 11/27) {{NEW}}"
+      "Neladalkib after prior ALK TKI: FDA accelerated approval 11/17/2026 (see progression box) {{NEW 11/2026}}"
      ],
      "hi": 1
     },
@@ -1479,7 +1479,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
       "Re-biopsy + ctDNA at PD (MET, SCLC transformation); local Rx for oligo-PD and continue TKI",
       "**EGFR post-osi:** ami + carbo/pem [[MARIPOSA-2]] (PFS HR 0.48) · after 1L combo: Dato-DXd (FDA accelerated approval) [[TROPION-Lung05]]",
       "**EGFR, MET-driven (MET IHC/amp):** savolitinib + osimertinib [[SAFFRON]] (PFS 7.6 vs 5.4 mo, HR 0.55 · OS HR 0.68 vs chemo); ESMO 2026, not approved {{NEW 10/2026}}",
-      "**Pending:** ivonescimab + chemo (HARMONi, Western-subgroup OS HR 0.76, not significant; FDA target Nov 14, 2026) {{NEW}} · HARMONi-3 1L: interim PFS missed significance (May 2026), final PFS and interim OS pending · China-only phase 3 (not US): sac-TMT [[OptiTROP-Lung04]] (final OS 25.9 vs 17.4 mo, HR 0.69) · iza-bren [[PANKU-Lung01]] (PFS 11.1 vs 5.7 mo, HR 0.40) {{NEW 10/2026}}",
+      "**ALK post-TKI:** neladalkib (FDA accelerated approval 11/17/2026; after alectinib as the only prior ALK TKI, or ≥2 ALK TKIs + platinum chemo; ALKOVE-1, single-arm) {{NEW 11/2026}}",
+      "**Not approved:** ivonescimab + chemo (HARMONi): FDA complete response letter 11/13/2026 (no significant OS gain; mostly China-enrolled data) {{NEW 11/2026}} · HARMONi-3 1L: interim PFS missed significance (May 2026), final PFS and interim OS pending · China-only phase 3 (not US): sac-TMT [[OptiTROP-Lung04]] (final OS 25.9 vs 17.4 mo, HR 0.69) · iza-bren [[PANKU-Lung01]] (PFS 11.1 vs 5.7 mo, HR 0.40) {{NEW 10/2026}}",
       "<<Neg:>> HERTHENA-Lung02 (HER3-DXd, withdrawn); IO mono ineffective in EGFR+"
      ]
     }
@@ -1487,26 +1488,6 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   }
  ],
  "pending": [
-  {
-   "date": "2026-11-14",
-   "exact": true,
-   "drug": "Ivonescimab + chemo",
-   "ind": "EGFR+ NSCLC after 3rd-gen TKI",
-   "trial": "HARMONi (Western-subgroup OS HR 0.76, not significant; full trial about 0.78)",
-   "note": "BLA accepted Jan 2026; target Nov 14, 2026; may slip about 3 months after major amendment",
-   "src": "https://www.fiercepharma.com/pharma/summit-therapeutics-updates-ivonescimab-survival-data-ahead-fda-decision-date",
-   "kind": "fda"
-  },
-  {
-   "date": "2026-11-27",
-   "exact": true,
-   "drug": "Neladalkib",
-   "ind": "ALK+ NSCLC after TKI",
-   "trial": "ALKOVE-1 (ORR 31%; 46% lorlatinib-naive)",
-   "note": "Priority review",
-   "kind": "fda",
-   "src": "https://www.onclive.com/view/fda-grants-priority-review-to-neladalkib-for-tki-pretreated-alk-nsclc"
-  },
   {
    "date": "2027-02-27",
    "exact": true,
@@ -1544,6 +1525,18 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   }
  ],
  "changes": [
+  {
+   "date": "2026-11-17",
+   "tag": "approval",
+   "text": "Neladalkib (Nelkarmi) granted FDA accelerated approval for locally advanced or metastatic ALK+ NSCLC after one prior ALK TKI (alectinib) or after ≥2 ALK TKIs and platinum chemotherapy (ALKOVE-1, single-arm).",
+   "src": "https://www.fda.gov/drugs/cancer-approvals/fda-grants-accelerated-approval-neladalkib-previously-treated-locally-advanced-or-metastatic-alk"
+  },
+  {
+   "date": "2026-11-13",
+   "tag": "neg",
+   "text": "FDA issued a complete response letter for ivonescimab + chemotherapy (HARMONi, EGFRm NSCLC after TKI): no statistically significant OS improvement and mostly China-enrolled data; FDA recommended a new multiregional trial.",
+   "src": "https://download.open.fda.gov/crl/CRL_BLA761524_20261113.pdf"
+  },
   {
    "date": "2026-10-26",
    "tag": "data",
@@ -1616,8 +1609,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   }
  ],
  "foot": "IO = PD-(L)1 inhibitor · accel. = accelerated approval · NS = not significant · VPI = visceral pleural invasion · NEW = approval or phase 3 data in last 18 mo · Metastatic disease without a driver: see NSCLC metastatic, no driver.",
- "checked": "2026-11-03",
- "checkNote": "Nov 3, 2026: NCCN attributions replaced with FDA-label wording."
+ "checked": "2026-11-22",
+ "checkNote": "Nov 22, 2026: neladalkib accelerated approval (11/17) applied; ivonescimab CRL (11/13) applied; both pending items closed."
 }</script>
 <script type="application/json" id="data-sclc">{
  "id": "sclc",
@@ -3362,8 +3355,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
  "id": "breast",
  "name": "Breast: HR+/HER2−",
  "asOf": "2026-10-20",
- "checked": "2026-11-15",
- "checkNote": "Nov 15, 2026: FDA action date added for gedatolisib sNDA (PIK3CA-mutated cohort), per Celcuity 11/9/2026.",
+ "checked": "2026-11-22",
+ "checkNote": "Nov 22, 2026: giredestrant + everolimus approval (11/16) applied; pending item closed. Adjuvant giredestrant decision still due 11/30.",
  "baseline": "Early: ER/PR (ER-low 1–10%: TNBC-like, ET not withheld) · HER2 IHC/ISH incl. 0 / ultralow / 1+ · Ki-67 · Oncotype DX for pN0–1 · germline panel for OlympiA candidates · staging imaging for stage III or symptoms. Metastatic: rebiopsy at first recurrence · germline BRCA1/2, PALB2 · NGS tissue or ctDNA: PIK3CA, AKT1, PTEN, ESR1, NTRK, RET, MSI/TMB · repeat ctDNA ESR1 at each ET progression",
  "basis": "Trial publications · FDA actions through Sep 2026 (NCCN not accessed) Figures are taken from the linked sources; confirm against the source before clinical use. Last weekly check 11/2/2026; not every figure has been independently re-verified.",
  "markers": [
@@ -3457,7 +3450,7 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
      ],
      "w": 2,
      "lines": [
-      "**ESR1m:** elacestrant [[EMERALD]] · imlunestrant ± abema (combination FDA 9/18/2026) {{NEW 9/2026}} [[EMBER-3]] · vepdegestrant {{NEW 5/2026}} [[VERITAC-2]]; giredestrant + everolimus pending [[evERA]] (PFS HR 0.38 ESR1m; 0.56 ITT)",
+      "**ESR1m:** elacestrant [[EMERALD]] · imlunestrant ± abema (combination FDA 9/18/2026) {{NEW 9/2026}} [[EMBER-3]] · vepdegestrant {{NEW 5/2026}} [[VERITAC-2]]; giredestrant + everolimus (FDA 11/16/2026; after endocrine therapy, FDA-authorized ESR1 test) {{NEW 11/2026}} [[evERA]] (PFS HR 0.38 ESR1m; 0.56 ITT)",
       "**PIK3CA/AKT1/PTEN:** capivasertib + fulv [[CAPItello-291]] (altered PFS HR 0.50) · alpelisib [[SOLAR-1]]",
       "**PIK3CA-WT (no mutation detected):** gedatolisib + fulv ± palbo, after ≥1 endocrine line (FDA 7/14/2026) {{NEW 7/2026}} [[VIKTORIA-1]] (PFS 9.3 vs 2.0 mo)",
       "**Other:** abema + fulv [[postMONARCH]] (final OS 32.1 vs 24.6 mo, NS) · everolimus",
@@ -3496,16 +3489,6 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "src": "https://www.roche.com/media/releases/med-cor-2026-10-01"
   },
   {
-   "date": "2026-12-18",
-   "exact": true,
-   "drug": "Giredestrant + everolimus",
-   "ind": "ER+/HER2− advanced, ESR1-mutated, after CDK4/6i + ET",
-   "trial": "evERA (PFS HR 0.38 ESR1m; OS HR 0.62, immature)",
-   "note": "NDA accepted; NEJM Oct 1, 2026",
-   "kind": "fda",
-   "src": "https://www.roche.com/media/releases/med-cor-2026-10-01"
-  },
-  {
    "date": "",
    "label": "PIK3CA-mutant cohort: primary PFS met per sponsor; only subgroup data shown at ESMO 2026",
    "drug": "Readout: VIKTORIA-1 PIK3CA-mutant cohort",
@@ -3536,6 +3519,12 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   }
  ],
  "changes": [
+  {
+   "date": "2026-11-16",
+   "tag": "approval",
+   "text": "Giredestrant (Wilserdly) + everolimus approved for ER+/HER2− ESR1-mutated advanced breast cancer (FDA-authorized test) recurring during/after adjuvant endocrine therapy or progressing on ≥1 endocrine regimen for metastatic disease (evERA).",
+   "src": "https://www.fda.gov/drugs/cancer-approvals/fda-approves-giredestrant-combination-everolimus-er-positive-her2-negative-esr1-mutated-locally"
+  },
   {
    "date": "2026-10-26",
    "tag": "data",
@@ -4616,6 +4605,12 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   }
  ],
  "changes": [
+  {
+   "date": "2026-11-16",
+   "tag": "data",
+   "text": "PIVOT-006 (phase 3, n=367): adjuvant intravesical cretostimogene vs surveillance after TURBT in intermediate-risk / HG Ta NMIBC met RFS primary endpoint, HR 0.32 (95% CI 0.23–0.45); company topline; presentation planned at SUO 12/2/2026.",
+   "src": "https://www.onclive.com/view/cretostimogene-improves-rfs-in-intermediate-risk-and-high-grade-ta-nmibc"
+  },
   {
    "date": "2026-11-13",
    "tag": "approval",
@@ -11706,6 +11701,216 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "p_url": "",
   "p": "",
   "tier": "secondary"
+ },
+ "AMPLIFY": {
+  "url": "https://onclive.com/view/fixed-duration-acalabrutinib-venetoclax-combo-improves-pfs-in-frontline-cll",
+  "date": "2026-11-22",
+  "vid": "2026-11-22-a4c2ae8b",
+  "fv": 2,
+  "a": "40.8 months | At a median follow-up of 40.8 months\nnot reached | the median progression-free survival (PFS) was not reached by blinded independent central review (BICR)\n47.6 months | was 47.6 months with investigator’s choice of fludarabine plus cyclophosphamide and rituximab\nHR, 0.65; 95% CI, 0.49-0.87; P = .0038 | reduced the risk of disease progression or death by 35% (HR, 0.65; 95% CI, 0.49-0.87; P = .0038)\nHR, 0.42; 95% CI, 0.30-0.59; P < .0001 | the triplet reduced this risk by 58% (HR, 0.42; 95% CI, 0.30-0.59; P < .0001)\n83.1% and 76.5%, compared with 66.5% | were 83.1% and 76.5%, compared with 66.5% with SOC chemoimmunotherapy\n867 | A total of 867 patients were randomized 1:1:1\n45.0% | were 45.0% in the doublet arm\n95.0% | 95.0% in the triplet arm\n72.9% | 72.9% in the FCR/BR arm\n82.8% | unmutated IGHV [36-month PFS rate, 82.8%]\n83.6% | [36-month PFS rate, 83.6%]\n0.67 (95% CI, 0.39-1.14) | were 0.67 (95% CI, 0.39-1.14) and 0.69 (95% CI, 0.48-0.97)\n0.69 (95% CI, 0.48-0.97) | were 0.67 (95% CI, 0.39-1.14) and 0.69 (95% CI, 0.48-0.97)\n0.58 (95% CI, 0.32-1.02) | were 0.58 (95% CI, 0.32-1.02) and 0.35 (95% CI, 0.23-0.53)\n0.35 (95% CI, 0.23-0.53) | were 0.58 (95% CI, 0.32-1.02) and 0.35 (95% CI, 0.23-0.53)\n94.1%, 87.7%, and 85.9% | were 94.1%, 87.7%, and 85.9%, respectively\n0.33 (95% CI, 0.18-0.56) | The HR for OS with AV vs FCR/BR was 0.33 (95% CI, 0.18-0.56)\n0.76 (95% CI, 0.48-1.18) | the HR for OS was 0.76 (95% CI, 0.48-1.18)\n10, 25, and 21 | COVID-19 deaths were seen in 10 patients on the [doublet] arm, 25 on the [triplet] arm\n97.5%, 96.2%, and 93.7% | the adjusted rates were 97.5%, 96.2%, and 93.7%, respectively\n0.27 (95% CI, 0.11-0.60) | The HRs for OS with AV or AVO vs FCR/BR were 0.27 (95% CI, 0.11-0.60) and 0.47 (95% CI, 0.22-0.95)\n0.47 (95% CI, 0.22-0.95) | and 0.47 (95% CI, 0.22-0.95), respectively\n26.8% (n = 291) | occurring in 26.8% of those who received the AV regimen (n = 291)\n35.2% (n = 284) | 35.2% of those given AVO (n = 284)\n32.4% (n = 259) | 32.4% of those given FCR/BR (n = 259)\n24.7%, 38.4%, and 27.4% | Serious AEs were seen in 24.7%, 38.4%, and 27.4% of patients, respectively.\n9.3% and 12.0% | 9.3% and 12.0% of patients in the doublet and triplet arms experienced a cardiac event\n3.5% | compared with 3.5% of those in the FCR/BR arm\n1.7%, 2.5%, and 1.2% | grade 3 or higher cardiac events occurred in 1.7%, 2.5%, and 1.2% of patients, respectively",
+  "b": "867 | A total of 867 patients were randomized 1:1:1.\n40.8 months | At a median follow-up of 40.8 months\n47.6 months | was 47.6 months with investigator's choice of\nHR 0.65 (95% CI 0.49-0.87), P = .0038 | (HR, 0.65; 95% CI, 0.49-0.87; P = .0038)\nHR 0.42 (95% CI 0.30-0.59), P < .0001 | (HR, 0.42; 95% CI, 0.30-0.59; P < .0001)\n83.1% / 76.5% / 66.5% | were 83.1% and 76.5%, compared with 66.5%\n45.0% / 95.0% / 72.9% | uMRD rates at a sensitivity level 10-4 in the peripheral blood were 45.0% in the doublet arm\n94.1% / 87.7% / 85.9% | The 36-month OS rates with the doublet, triplet, and FCR/BR regimens were 94.1%, 87.7%, and 85.9%\nHR 0.33 (0.18-0.56); HR 0.76 (0.48-1.18) | OS HRs as reported (exact sentence not captured)\n10 / 25 / 21 | COVID-19 deaths were seen in 10 patients on the",
+  "alt_url": "",
+  "alt": "",
+  "labels": {
+   "0|0.49": "match",
+   "0|0.65": "match",
+   "0|0.87": "match",
+   "0|66.5": "match",
+   "0|83.1": "match",
+   "0|95": "match",
+   "1|0.30": "match",
+   "1|0.42": "match",
+   "1|0.59": "match",
+   "1|76.5": "match"
+  },
+  "p_url": "",
+  "p": "",
+  "tier": "secondary"
+ },
+ "CLL14": {
+  "url": "https://ascopost.com/issues/august-10-2023/cll14-long-term-results-of-fixed-duration-venetoclax-plus-obinutuzumab-in-elderly-patients-with-cll",
+  "date": "2026-11-22",
+  "vid": "2026-11-22-149a6bdd",
+  "fv": 2,
+  "a": "Reader group labels: Ven-O fixed duration, previously untreated remission lasting >6 years without therapy\n53% | 53% of previously untreated patients who received a fixed duration of the combination\nMore than 60% | More than 60% of patients treated with fixed-duration venetoclax plus obinutuzumab\nHR = 0.40 | improved progression-free survival (hazard ratio [HR] = 0.40)\n53.1% | higher rates of undetectable MRD compared with those who received chlorambucil plus obinutuzumab\n21.7% | higher rates of undetectable MRD compared with those who received chlorambucil plus obinutuzumab\n76.2 months | The median progression-free survival was 76.2 months.\n65.2% (HR = 0.44) | rates of time to next treatment with venetoclax plus obinutuzumab at 65.2% (HR = 0.44)\n37.1% | compared with chlorambucil plus obinutuzumab at 37.1%\n432 patients | The trial included 432 patients\n72 years | with a median age of 72 years",
+  "b": "Reader group labels: VenO still in remission without therapy >6 years\n6-year | The 6-year follow-up of a landmark study has revealed\n53% | 53% of previously untreated patients who received a fixed duration\n432 | The trial included 432 patients, all of whom were previously untreated\n72 years | with a median age of 72 years\nHR 0.40 | improved progression-free survival (hazard ratio [HR] = 0.40)\n53.1% vs 21.7% | (53.1% vs 21.7%, respectively)\n76.2 months | The median progression-free survival was 76.2 months.\n65.2% (HR 0.44) vs 37.1% | time to next treatment with venetoclax plus obinutuzumab at 65.2% (HR = 0.44)",
+  "alt_url": "",
+  "alt": "",
+  "labels": {
+   "0|0.40": "match",
+   "1|0.44": "match",
+   "1|53": "match"
+  },
+  "p_url": "",
+  "p": "",
+  "tier": "secondary"
+ },
+ "COMMANDS": {
+  "url": "https://www.mdanderson.org/newsroom/2023/05/ASCO-Luspatercept-MDS-patients-end-blood-transfusions.html",
+  "date": "2026-11-22",
+  "vid": "2026-11-22-874dec3d",
+  "fv": 2,
+  "a": "58.5% | 58.5% of patients receiving luspatercept achieved the primary endpoint of independence from red blood cell transfusions\n31.2% | compared to 31.2% of patients who received epoetin alfa\n47.6% | 47.6% of luspatercept patients achieved transfusion independence\n29.2% | versus 29.2% of patients receiving epoetin alfa\n74.1% | 74.1% of patients who received luspatercept saw hematologic improvement in erythroid responses greater than eight weeks\n51.3% | compared to 51.3% of patients who received epoetin alfa\n301 | The trial enrolled 301 patients at 226 sites.\n30.3% | Treatment-related adverse events of all grades occurred in 30.3% of patients in the luspatercept group\n17.6% | and 17.6% in the epoetin alfa group\nEight patients (4.5%) | Eight patients (4.5%) that received luspatercept discontinued treatment due to treatment-related adverse events.\nfour / five | AML progression was reported in four patients receiving luspatercept",
+  "b": "301 at 226 sites | The trial enrolled 301 patients at 226 sites.\n58.5% vs 31.2% | 58.5% of patients receiving luspatercept achieved the primary endpoint of independence from red blood cell transfusions\n47.6% vs 29.2% | Within the first 24 weeks of treatment transfusion, 47.6% of luspatercept patients achieved transfusion independence\n74.1% vs 51.3% | 74.1% of patients who received luspatercept saw hematologic improvement in erythroid responses greater than eight weeks\n30.3% vs 17.6% | Treatment-related adverse events of all grades occurred in 30.3% of patients in the luspatercept group\n8 (4.5%) | Eight patients (4.5%) that received luspatercept discontinued treatment due to treatment-related adverse events.\n4 vs 5 | AML progression was reported in four patients receiving luspatercept and five patients receiving epoetin alfa.",
+  "alt_url": "",
+  "alt": "",
+  "labels": {
+   "0|31.2": "match",
+   "0|58.5": "match"
+  },
+  "p_url": "",
+  "p": "",
+  "tier": "secondary"
+ },
+ "DREAMM-7": {
+  "url": "https://www.targetedonc.com/view/belantamab-mafodotin-triplet-improves-os-stakes-a-claim-as-new-soc-in-r-r-multiple-myeloma",
+  "date": "2026-11-22",
+  "vid": "2026-11-22-daafb1d7",
+  "fv": 2,
+  "a": "39.4 months (range, 0.1-52.3) | at a median follow-up of 39.4 months (range, 0.1-52.3)\nnot reached (NR) (n = 243; 95% CI, NR-NR) | the median OS was not reached (NR) in both the BVd (n = 243; 95% CI, NR-NR)\nn = 251; 95% CI, 41.0-NR | and DVd (n = 251; 95% CI, 41.0-NR) arms\nHR, 0.58; 95% CI, 0.43-0.79; P = .00023 | (HR, 0.58; 95% CI, 0.43-0.79; P = .00023)\n84 months | The predicted median OS based on modeling is 84 months with BVd vs 51 months with DVd.\n51 months | The predicted median OS based on modeling is 84 months with BVd vs 51 months with DVd.\n79% (95% CI, 73%-84%) | The estimated 24-month survival rates in the respective arms were 79% (95% CI, 73%-84%)\n67% (95% CI, 61%-73%) | and 67% (95% CI, 61%-73%)\n74% (95% CI, 68%-79%) | these respective rates at 36 months are 74% (95% CI, 68%-79%) and 60% (95% CI, 54%-66%)\n60% (95% CI, 54%-66%) | these respective rates at 36 months are 74% (95% CI, 68%-79%) and 60% (95% CI, 54%-66%)\n83.1% (95% CI, 77.8%-87.6%) | The objective response rate (ORR) with BVd was 83.1% (95% CI, 77.8%-87.6%)\n71.3% (95% CI, 65.3%-76.8%) | vs 71.3% (95% CI, 65.3%-76.8%) with DVd\n40.8 months (95% CI, 30.5-NR) | at 40.8 months (95% CI, 30.5-NR) and 17.8 months (95% CI, 13.8-23.6), respectively\n17.8 months (95% CI, 13.8-23.6) | at 40.8 months (95% CI, 30.5-NR) and 17.8 months (95% CI, 13.8-23.6), respectively\n25.1% (95% CI, 19.8%-31.0%) | was 25.1% (95% CI, 19.8%-31.0%) in the BVd arm vs 10.4% (95% CI, 6.9%-14.8%) in the DVd arm\n10.4% (95% CI, 6.9%-14.8%) | was 25.1% (95% CI, 19.8%-31.0%) in the BVd arm vs 10.4% (95% CI, 6.9%-14.8%) in the DVd arm\n38.7% (95% CI, 32.5%-45.1%) | was 38.7% (95% CI, 32.5%-45.1%) and 17.9% (95% CI, 13.4%-23.2%), respectively\n17.9% (95% CI, 13.4%-23.2%) | was 38.7% (95% CI, 32.5%-45.1%) and 17.9% (95% CI, 13.4%-23.2%), respectively\nNR (95% CI, 45.6-NR) | The median time to second objective disease progression (PFS2) with BVd was NR (95% CI, 45.6-NR)\n33.4 months (95% CI, 26.7-44.9) | vs 33.4 months (95% CI, 26.7-44.9) with DVd\nHR, 0.59; 95% CI, 0.45-0.77 | (HR, 0.59; 95% CI, 0.45-0.77)\n28.2 months (range, 0.1-40.0) | at a median follow-up of 28.2 months (range, 0.1-40.0)\n36.6 months (95% CI, 28.4-NR) | The median PFS of 36.6 months (95% CI, 28.4-NR) with BVd\n13.4 months (95% CI, 11.1-17.5) | vs 13.4 months (95% CI, 11.1-17.5) with DVd\n59% | translating to a 59% reduction in the risk of disease progression or death\nHR, 0.41; 95% CI, 0.31-0.53; P < .00001 | (HR, 0.41; 95% CI, 0.31-0.53; P < .00001)\nHR, 0.57; 95% CI, 0.40-0.80 | a strong trend favored the BVd regimen (HR, 0.57; 95% CI, 0.40-0.80)\n494 | Of the total 494 patients enrolled\n243 / 251 | 243 were assigned to the BVd arm and 251 were assigned to the DVd arm\n95% and 78% | Grade 3 or 4 AEs occurred in 95% and 78% of patients, respectively\n32% | AEs resulted in permanent discontinuation of treatment for 32% of those given BVd\n19% | and 19% of those who received DVd\n68% | In the BVd arm, blurred vision was the most frequent ocular event experienced;",
+  "b": "494; 243 / 251 | Of the total 494 patients enrolled, 243 were assigned to the BVd arm and 251 were assigned to the DVd arm;\n39.4 months (0.1-52.3) | at a median follow-up of 39.4 months (range, 0.1-52.3)\n28.2 months (0.1-40.0) | at a median follow-up of 28.2 months (range, 0.1-40.0) this was met\nNR both arms | median OS was not reached (NR) in both the BVd (n = 243; 95% CI, NR-NR)\nHR 0.58 (95% CI 0.43-0.79), P = .00023 | (HR, 0.58; 95% CI, 0.43-0.79; P = .00023)\n84 vs 51 months | The predicted median OS based on modeling is 84 months with BVd vs 51 months with DVd.\n74% vs 60% | these respective rates at 36 months are 74% (95% CI, 68%-79%) and 60% (95% CI, 54%-66%)\nHR 0.57 (0.40-0.80) | median OS was NR in both arms, but a strong trend favored the BVd regimen (HR, 0.57; 95% CI, 0.40-0.80)\n36.6 (28.4-NR) vs 13.4 (11.1-17.5) months | The median PFS of 36.6 months (95% CI, 28.4-NR) with BVd vs 13.4 months\nHR 0.41 (95% CI 0.31-0.53), P < .00001 | (HR, 0.41; 95% CI, 0.31-0.53; P < .00001)\nHR 0.59 (0.45-0.77) | (HR, 0.59; 95% CI, 0.45-0.77)\n83.1% vs 71.3% | was 83.1% (95% CI, 77.8%-87.6%) vs 71.3%\n25.1% vs 10.4% | was 25.1% (95% CI, 19.8%-31.0%) in the BVd arm vs 10.4%\n68% / 24% | 68% experienced an any-grade event and 24% experienced a grade 3 or 4 event",
+  "alt_url": "",
+  "alt": "",
+  "labels": {
+   "0|0.31": "match",
+   "0|0.41": "match",
+   "0|0.53": "match",
+   "0|13.4": "match",
+   "0|36.6": "match",
+   "0|95": "match",
+   "1|0.43": "match",
+   "1|0.58": "match",
+   "1|0.79": "match",
+   "1|95": "match"
+  },
+  "p_url": "",
+  "p": "",
+  "tier": "secondary"
+ },
+ "KOMET-001": {
+  "url": "https://www.vjhemonc.com/fda-approves-ziftomenib-for-npm1-mutated-r-r-aml/",
+  "date": "2026-11-22",
+  "vid": "2026-11-22-f4c3fbfe",
+  "fv": 2,
+  "a": "112 | evaluating the safety and efficacy of ziftomenib in 112 adults\n21.4% (95% CI: 14.2, 30.2) | rate of 21.4% (95% CI: 14.2, 30.2)\nfive months | with a median duration of five months\n21.2% | 21.2% of patients who were dependent on red blood cell (RBC) and/or platelet transfusions at baseline\n26% | The most frequent grade ≥3 treatment-emergent adverse events included febrile neutropenia (26%)\n20% / 20% | anemia (20%), and thrombocytopenia (20%)\n25% | Differentiation syndrome was reported in 25% of patients\n15% | 25% of patients, 15% at grade 3 and no grade 4-5 events\n3% | 3% of patients discontinued therapy due to adverse events attributed to ziftomenib.",
+  "b": "112 | in 112 adults with R/R NPM1-m AML\n21.4% (95% CI 14.2-30.2) | rate of 21.4% (95% CI: 14.2, 30.2) with a median duration of five months\nfive months | rate of 21.4% (95% CI: 14.2, 30.2) with a median duration of five months\n21.2% | 21.2% of patients who were dependent on red blood cell (RBC) and/or platelet transfusions at baseline\n25%; 15% grade 3; no grade 4-5 | Differentiation syndrome was reported in 25% of patients, 15% at grade 3 and no grade 4-5 events.\n26% / 20% / 20% | included febrile neutropenia (26%), anemia (20%), and thrombocytopenia (20%)\n3% | 3% of patients discontinued therapy due to adverse events attributed to ziftomenib.",
+  "alt_url": "",
+  "alt": "",
+  "labels": {
+   "0|14.2": "match",
+   "0|21.4": "match",
+   "0|30.2": "match",
+   "1|15": "match",
+   "1|25": "match",
+   "2|claim": "unclear"
+  },
+  "p_url": "",
+  "p": "",
+  "tier": "secondary"
+ },
+ "MajesTEC-3": {
+  "url": "https://ascopost.com/issues/march-25-2026/fda-approves-teclistamab-and-daratumumab-for-relapsed-or-refractory-multiple-myeloma/",
+  "date": "2026-11-22",
+  "vid": "2026-11-22-a81a4564",
+  "fv": 2,
+  "a": "587 | A total of 587 patients were randomly assigned in the trial\n291 | teclistamab and daratumumab hyaluronidase group (n = 291)\n296 | or daratumumab hyaluronidase, bortezomib, and dexamethasone (DVd) (n = 296)\nnot reached | Median progression-free survival was not reached in the teclistamab and daratumumab hyaluronidase arm\n18.1 months (95% CI = 14.6–22.8) | was 18.1 months (95% confidence interval [CI] = 14.6–22.8) in the control arm\nHR = 0.17, 95% CI = 0.12–0.23; P < .0001 | (hazard ratio [HR] = 0.17, 95% CI = 0.12–0.23; P < .0001)\nnot reached | Median overall survival was not reached in either arm\nHR = 0.46, 95% CI = 0.32–0.65; P < .0001 | (HR = 0.46, 95% CI = 0.32–0.65; P < .0001)",
+  "b": "587 | A total of 587 patients were randomly assigned in the trial\n291 / 296 | the teclistamab and daratumumab hyaluronidase group (n = 291)\nNR | Median progression-free survival was not reached in the teclistamab and daratumumab hyaluronidase arm\n18.1 months (95% CI 14.6-22.8) | was 18.1 months (95% confidence interval [CI] = 14.6–22.8) in the control arm\nHR 0.17 (95% CI 0.12-0.23); P < .0001 | (hazard ratio [HR] = 0.17, 95% CI = 0.12–0.23; P < .0001)\nNR both arms | Median overall survival was not reached in either arm\nHR 0.46 (95% CI 0.32-0.65); P < .0001 | (HR = 0.46, 95% CI = 0.32–0.65; P < .0001)",
+  "alt_url": "",
+  "alt": "",
+  "labels": {
+   "0|0.12": "match",
+   "0|0.17": "match",
+   "0|0.23": "match",
+   "0|18.1": "match",
+   "0|95": "match",
+   "1|0.32": "match",
+   "1|0.46": "match",
+   "1|0.65": "match",
+   "1|95": "match"
+  },
+  "p_url": "",
+  "p": "",
+  "tier": "secondary"
+ },
+ "QUAZAR AML-001": {
+  "url": "https://www.pharmacytimes.com/view/fda-approves-oral-azacitidine-for-acute-myeloid-leukemia",
+  "date": "2026-11-22",
+  "vid": "2026-11-22-dfbafffb",
+  "fv": 2,
+  "a": "almost 10 months | significantly improved overall survival (OS) at the study’s primary endpoint of almost 10 months\n24.7 months | Median OS time was 24.7 months from the time of randomization for those receiving azacitidine.\n14.8 months | For those receiving the placebo, the median OS time was 14.8 months.\n49% and 22% | occurred in 49% and 22%  of patients administered azacytidine\n15% | Serious adverse effects (AEs) occurred in 15% of the participants receiving azacitidine",
+  "b": "24.7 months | Median OS time was 24.7 months from the time of randomization for those receiving azacitidine.\n14.8 months | For those receiving the placebo, the median OS time was 14.8 months.\nalmost 10 months | significantly improved overall survival (OS) at the study's primary endpoint of almost 10 months\n49% and 22% | New or worsening grade 3 of 4 neutropenia and thrombocytopenia occurred in 49% and 22%\n15% | Serious adverse effects (AEs) occurred in 15% of the participants receiving azacitidine",
+  "alt_url": "",
+  "alt": "",
+  "labels": {
+   "0|14.8": "match",
+   "0|24.7": "match"
+  },
+  "p_url": "",
+  "p": "",
+  "tier": "secondary"
+ },
+ "RATIFY": {
+  "url": "https://onclive.com/view/fda-approves-midostaurin-for-aml",
+  "date": "2026-11-22",
+  "vid": "2026-11-22-9c699d50",
+  "fv": 2,
+  "a": "23% | reduced the risk of death by 23% compared with chemotherapy alone\n25% | the overall survival (OS) benefit with midostaurin remained steady at 25%\n717 | 717 patients with newly diagnosed FLT3-mutant AML were randomized\nn = 360 / n = 357 | midostaurin (n = 360) or placebo (n = 357)\n74.7 months vs 25.6 months | In uncensored data, median OS was 74.7 months with midostaurin versus 25.6 months with chemotherapy alone\nHR, 0.77; 95% CI, 0.63-0.95; P = .016 | (HR, 0.77; 95% CI, 0.63-0.95; P = .016)\n95% CI, 31.7 - not attained | (95% CI, 31.7 - not attained)\n50.9% vs 43.9% | The 5-year OS rate for patients in the midostaurin arm was 50.9% versus 43.9% with placebo.\n8.2 vs 3.0 months | Median EFS in the midostaurin arm was 8.2 versus 3.0 months with placebo\nHR, 0.78; 95% CI, 0.66-0.93; P = .004 | (HR, 0.78; 95% CI, 0.66-0.93; P = .004)\n27.5% vs 19.3% | The 5-year EFS rate with midostaurin was 27.5% versus 19.3% with placebo.\n20.9 months | well beyond investigator expectations of 20.9 months\n57% | Overall, 57% of patients received an allogeneic stem cell transplant\n58% vs 54% | more commonly in the midostaurin arm versus placebo (58% vs 54%)\n59% / 54%, P = .18 | 59% of patients in the midostaurin arm and 54% in the placebo group experienced a complete remission\n63.8% vs 55.7% (HR, 0.75; P = .04) | the 4-year censored OS rate with midostaurin was 63.8% versus 55.7% for placebo (HR, 0.75; P = .04)\n8.2 vs 3.0 months (HR, 0.84; P = .025) | median EFS with midostaurin was 8.2 versus 3.0 months with placebo (HR, 0.84; P = .025)\n5.3% vs 5.0% | at 5.3% with midostaurin versus 5.0% with placebo",
+  "b": "717 (360 / 357) | 717 patients with newly diagnosed FLT3-mutant AML were randomized\n74.7 vs 25.6 months | In uncensored data, median OS was 74.7 months with midostaurin versus 25.6 months with chemotherapy alone\nHR 0.77 (95% CI 0.63-0.95), P = .016 | (HR, 0.77; 95% CI, 0.63-0.95; P = .016)\n50.9% vs 43.9% | The 5-year OS rate for patients in the midostaurin arm was 50.9% versus 43.9% with placebo.\n8.2 vs 3.0 months | Median EFS in the midostaurin arm was 8.2 versus 3.0 months with placebo\nHR 0.78 (95% CI 0.66-0.93), P = .004 | (HR, 0.78; 95% CI, 0.66-0.93; P = .004)\n59% vs 54%, P = .18 | 59% of patients in the midostaurin arm and 54% in the placebo group experienced a complete remission\n63.8% vs 55.7%; HR 0.75, P = .04 | the 4-year censored OS rate with midostaurin was 63.8% versus 55.7% for placebo",
+  "alt_url": "",
+  "alt": "",
+  "labels": {
+   "0|0.016": "match",
+   "0|0.63": "match",
+   "0|0.77": "match",
+   "0|0.95": "match",
+   "0|25.6": "match",
+   "0|74.7": "match"
+  },
+  "p_url": "",
+  "p": "",
+  "tier": "secondary"
+ },
+ "SEQUOIA": {
+  "url": "https://www.targetedonc.com/view/zanubrutinib-displays-pfs-benefit-over-bendamustine-rituximab-in-cll-and-sll",
+  "date": "2026-11-22",
+  "vid": "2026-11-22-040c8731",
+  "fv": 2,
+  "a": "Reader group labels: arm A vs arm B aged ≥65 years\nHR, 0.42; 95% CI, 0.28-0.63 | (HR, 0.42; 95% CI, 0.28-0.63)\n58% | reduced the risk of disease progression or death by 58%\n26.2 months | at a median of 26.2 months\nIQR, 23.7-29.6 | interquartile range [IQR], 23.7-29.6\n479 | A total of 479 patients without del(17p) underwent randomization\n36 (15%) of the 241 | 36 (15%) of the 241 patients in group A had progressed or died per independent review committee\n71 (30%) of 238 | 71 (30%) of 238 patients in group B\n70 years (range, 66-75) | The median age across arms A and B was 70 years (range, 66-75)\n81.3% vs 80.7% | aged 65 years or older (81.3% vs 80.7%)\n53% | 53% had unmutated IGHV gene\n27 (11%), 116 (51%), 17 (15%) | neutropenia in 27 patients (11%) in group A, 116 (51%) in group B, and 17 (15%) in group C)\n88 (37%), 113 (50%), 45 (41%) | Serious AEs were observed in 88 (37%) in group A, 113 (50%) in group B, and 45 (41%) in group C.\n11 (5%), 12 (5%), 3 (3%) | AEs which led to death occurred in 11 (5%) of those enrolled in group A, 12 (5%) in group B, and 3 (3%) in group C",
+  "b": "479; 241 / 238 | A total of 479 patients without del(17p) underwent randomization\nHR 0.42 (95% CI 0.28-0.63) | (HR, 0.42; 95% CI, 0.28-0.63)\n36 (15%) vs 71 (30%) | 36 (15%) of the 241 patients in group A had progressed or died per independent review committee\n26.2 months (IQR 23.7-29.6) | With a median follow-up of 26.2 months\n≥65 years | Eligibility for the trial was open to patients aged 65 years or older\n70 (66-75) | The median age across arms A and B was 70 years (range, 66-75)",
+  "alt_url": "",
+  "alt": "",
+  "labels": {
+   "0|0.28": "match",
+   "0|0.42": "match",
+   "0|0.63": "match",
+   "0|95": "match"
+  },
+  "p_url": "",
+  "p": "",
+  "tier": "secondary"
+ },
+ "ZUMA-7": {
+  "url": "https://ascopost.com/news/july-2023/overall-survival-with-axicabtagene-ciloleucel-in-large-b-cell-lymphoma-results-from-zuma-7/",
+  "date": "2026-11-22",
+  "vid": "2026-11-22-befa1f0a",
+  "fv": 2,
+  "a": "359 | In the international trial, 359 patients refractory to first-line treatment\n180 / 179 | to receive axicabtagene ciloleucel (n = 180) or standard care (n = 179)\n47.2 months (range = 39.8–60.0 months) | At a median follow-up of 47.2 months (range = 39.8–60.0 months)\n82 patients | death had occurred in 82 patients in the axicabtagene ciloleucel group vs 95 patients in the standard-care group.\n95 patients | death had occurred in 82 patients in the axicabtagene ciloleucel group vs 95 patients in the standard-care group.\nnot reached (95% CI = 28.6 months to not estimable) | Median overall survival was not reached (95% confidence interval [CI] = 28.6 months to not estimable)\n31.1 months (95% CI = 17.1 months to not estimable) | 31.1 months (95% CI = 17.1 months to not estimable) in the standard-care group\nHR = 0.73, 95% CI = 0.54–0.98, P = .03 | hazard ratio [HR] = 0.73, 95% CI = 0.54–0.98, P = .03\n54.6% (95% CI = 47.0%–61.6%) | Overall survival rate at 4 years was 54.6% (95% CI = 47.0%–61.6%) in the axicabtagene ciloleucel group\n46.0% (95% CI = 38.4%–53.2%) | 46.0% (95% CI = 38.4%–53.2%) in the standard-care group\n14.7 months (95% CI = 5.4–43.5 months) | Median investigator-assessed progression-free survival was 14.7 months (95% CI = 5.4–43.5 months)\n3.7 months (95% CI = 2.9–5.3 months) | 3.7 months (95% CI = 2.9–5.3 months) in the standard-care group\nHR = 0.51, 95% CI = 0.38–0.67 | (HR = 0.51, 95% CI = 0.38–0.67)\n41.8% (95% CI = 34.1%–49.2%) | Progression-free survival rate at 4 years was 41.8% (95% CI = 34.1%–49.2%) vs 24.4%\n24.4% (95% CI = 17.2%–32.2%) | vs 24.4% (95% CI = 17.2%–32.2%).\n102 patients (57.0%) | A total of 102 patients (57.0%) in the standard-care group received subsequent cellular immunotherapy\n79 (77.5%) | 79 (77.5%) received axicabtagene ciloleucel",
+  "b": "359 (180 / 179) | 359 patients refractory to first-line treatment or who relapsed within 12 months after first-line chemoimmunotherapy\n47.2 months (39.8-60.0) | At a median follow-up of 47.2 months (range = 39.8–60.0 months)\n82 vs 95 | death had occurred in 82 patients in the axicabtagene ciloleucel group vs 95 patients in the standard-care group\nNR (28.6-NE) vs 31.1 months (17.1-NE) | Median overall survival was not reached (95% confidence interval [CI] = 28.6 months to not estimable)\nHR 0.73 (95% CI 0.54-0.98), P = .03 | hazard ratio [HR] = 0.73, 95% CI = 0.54–0.98, P = .03\n54.6% vs 46.0% | Overall survival rate at 4 years was 54.6% (95% CI = 47.0%–61.6%)\n14.7 vs 3.7 months | Median investigator-assessed progression-free survival was 14.7 months\nHR 0.51 (0.38-0.67) | (HR = 0.51, 95% CI = 0.38–0.67)\n41.8% vs 24.4% | Progression-free survival rate at 4 years was 41.8%\n102 (57.0%) | A total of 102 patients (57.0%) in the standard-care group received subsequent cellular immunotherapy",
+  "alt_url": "",
+  "alt": "",
+  "labels": {
+   "0|0.03": "match",
+   "0|0.54": "match",
+   "0|0.73": "match",
+   "0|0.98": "match",
+   "0|46.0": "match",
+   "0|54.6": "match",
+   "0|95": "match",
+   "1|claim": "unclear"
+  },
+  "p_url": "",
+  "p": "",
+  "tier": "secondary"
  }
 }</script>
 <script type="application/json" id="abbrev">{
@@ -12116,7 +12321,9 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
  "mCRPC": "metastatic castration-resistant prostate cancer",
  "OPSCC": "oropharyngeal squamous cell carcinoma",
  "sNDA": "supplemental New Drug Application",
- "MBC": "metastatic breast cancer"
+ "MBC": "metastatic breast cancer",
+ "SUO": "Society of Urologic Oncology",
+ "HG": "high grade"
 }</script>
 <script type="application/json" id="trials">{
  "MATTERHORN": {
@@ -16962,8 +17169,11 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "daratumumab"
   ],
   "lvl": 1,
-  "v": "2026-10-23",
-  "n": "587 (291 vs 296)"
+  "v": "2026-11-22",
+  "n": "587 (291 vs 296)",
+  "quote": "\"18.1 months (95% CI = 14.6–22.8) | was 18.1 months (95% confidence interval [CI] = 14.6–22.8) in the control arm\" \"HR = 0.17, 95% CI = 0.12–0.23;\" \"P < .0001 | (hazard ratio [HR] = 0.17, 95% CI = 0.12–0.23;\" \"HR = 0.46, 95% CI = 0.32–0.65;\" \"P < .0001 | (HR = 0.46, 95% CI = 0.32–0.65;\"",
+  "vid": "2026-11-22-a81a4564",
+  "vt": "secondary"
  },
  "MonumenTAL-3": {
   "full": "Talquetamab + daratumumab ± pomalidomide vs DPd",
@@ -17125,7 +17335,10 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "belantamab mafodotin"
   ],
   "lvl": 1,
-  "v": "2026-10-23"
+  "v": "2026-11-22",
+  "quote": "\"not reached (NR) (n = 243; 95% CI, NR-NR) | the median OS was not reached (NR) in both the BVd (n = 243; 95% CI, NR-NR)\" \"n = 251; 95% CI, 41.0-NR | and DVd (n = 251; 95% CI, 41.0-NR) arms\" \"HR, 0.58; 95% CI, 0.43-0.79;\" \"P = .00023 | (HR, 0.58; 95% CI, 0.43-0.79;\" \"79% (95% CI, 73%-84%) | The estimated 24-month survival rates in the respective arms were 79% (95% CI, 73%-84%)\" \"67% (95% CI, 61%-73%) | and 67% (95% CI, 61%-73%)\" \"74% (95% CI, 68%-79%) | these respective rates at 36 months are 74% (95% CI, 68%-79%) and 60% (95% CI, 54%-66%)\" \"60% (95% CI, 54%-66%) | these respective rates at 36 months are 74% (95% CI, 68%-79%) and 60% (95% CI, 54%-66%)\" \"83.1% (95% CI, 77.8%-87.6%) | The objective response rate (ORR) with BVd was 83.1% (95% CI, 77.8%-87.6%)\" \"71.3% (95% CI, 65.3%-76.8%) | vs 71.3% (95% CI, 65.3%-76.8%) with DVd\" \"40.8 months (95% CI, 30.5-NR) | at 40.8 months (95% CI, 30.5-NR) and 17.8 months (95% CI, 13.8-23.6), respectively\" \"17.8 months (95% CI, 13.8-23.6) | at 40.8 months (95% CI, 30.5-NR) and 17.8 months (95% CI, 13.8-23.6), respectively\" \"25.1% (95% CI, 19.8%-31.0%) | was 25.1% (95% CI, 19.8%-31.0%) in the BVd arm vs 10.4% (95% CI, 6.9%-14.8%) in the DVd arm\" \"10.4% (95% CI, 6.9%-14.8%) | was 25.1% (95% CI, 19.8%-31.0%) in the BVd arm vs 10.4% (95% CI, 6.9%-14.8%) in the DVd arm\" \"38.7% (95% CI, 32.5%-45.1%) | was 38.7% (95% CI, 32.5%-45.1%) and 17.9% (95% CI, 13.4%-23.2%), respectively\" \"17.9% (95% CI, 13.4%-23.2%) | was 38.7% (95% CI, 32.5%-45.1%) and 17.9% (95% CI, 13.4%-23.2%), respectively\" \"NR (95% CI, 45.6-NR) | The median time to second objective disease progression (PFS2) with BVd was NR (95% CI, 45.6-NR)\" \"33.4 months (95% CI, 26.7-44.9) | vs 33.4 months (95% CI, 26.7-44.9) with DVd\" \"HR, 0.59; 95% CI, 0.45-0.77 | (HR, 0.59; 95% CI, 0.45-0.77)\" \"36.6 months (95% CI, 28.4-NR) | The median PFS of 36.6 months (95% CI, 28.4-NR) with BVd\" \"13.4 months (95% CI, 11.1-17.5) | vs 13.4 months (95% CI, 11.1-17.5) with DVd\" \"HR, 0.41; 95% CI, 0.31-0.53;\" \"P < .00001 | (HR, 0.41; 95% CI, 0.31-0.53;\" \"HR, 0.57; 95% CI, 0.40-0.80 | a strong trend favored the BVd regimen (HR, 0.57; 95% CI, 0.40-0.80)\" \"95% and 78% | Grade 3 or 4 AEs occurred in 95% and 78% of patients, respectively\"",
+  "vid": "2026-11-22-daafb1d7",
+  "vt": "secondary"
  },
  "DREAMM-8": {
   "full": "Belantamab mafodotin + Pd vs PVd",
@@ -17333,7 +17546,10 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "axicabtagene ciloleucel"
   ],
   "lvl": 1,
-  "v": "2026-10-23"
+  "v": "2026-11-22",
+  "quote": "\"not reached (95% CI = 28.6 months to not estimable) | Median overall survival was not reached (95% confidence interval [CI] = 28.6 months to not estimable)\" \"31.1 months (95% CI = 17.1 months to not estimable) | 31.1 months (95% CI = 17.1 months to not estimable) in the standard-care group\" \"HR = 0.73, 95% CI = 0.54–0.98, P = .03 | hazard ratio [HR] = 0.73, 95% CI = 0.54–0.98, P = .03\" \"54.6% (95% CI = 47.0%–61.6%) | Overall survival rate at 4 years was 54.6% (95% CI = 47.0%–61.6%) in the axicabtagene ciloleucel group\" \"46.0% (95% CI = 38.4%–53.2%) | 46.0% (95% CI = 38.4%–53.2%) in the standard-care group\" \"14.7 months (95% CI = 5.4–43.5 months) | Median investigator-assessed progression-free survival was 14.7 months (95% CI = 5.4–43.5 months)\" \"3.7 months (95% CI = 2.9–5.3 months) | 3.7 months (95% CI = 2.9–5.3 months) in the standard-care group\" \"HR = 0.51, 95% CI = 0.38–0.67 | (HR = 0.51, 95% CI = 0.38–0.67)\" \"41.8% (95% CI = 34.1%–49.2%) | Progression-free survival rate at 4 years was 41.8% (95% CI = 34.1%–49.2%) vs 24.4%\" \"24.4% (95% CI = 17.2%–32.2%) | vs 24.4% (95% CI = 17.2%–32.2%).\"",
+  "vid": "2026-11-22-befa1f0a",
+  "vt": "secondary"
  },
  "TRANSFORM": {
   "full": "Lisocabtagene maraleucel vs standard care + ASCT",
@@ -17556,7 +17772,10 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "obinutuzumab"
   ],
   "lvl": 1,
-  "v": "2026-10-23"
+  "v": "2026-11-22",
+  "quote": "\"53% | 53% of previously untreated patients who received a fixed duration of the combination\" \"HR = 0.40 | improved progression-free survival (hazard ratio [HR] = 0.40)\" \"65.2% (HR = 0.44) | rates of time to next treatment with venetoclax plus obinutuzumab at 65.2% (HR = 0.44)\" \"Reader group labels: Ven-O fixed duration, previously untreated remission lasting >6 years without therapy\"",
+  "vid": "2026-11-22-149a6bdd",
+  "vt": "secondary"
  },
  "AMPLIFY": {
   "full": "Acalabrutinib + venetoclax (± obinutuzumab) vs chemoimmunotherapy",
@@ -17575,8 +17794,11 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "venetoclax"
   ],
   "lvl": 1,
-  "v": "2026-10-23",
-  "n": "867"
+  "v": "2026-11-22",
+  "n": "867",
+  "quote": "\"HR, 0.65; 95% CI, 0.49-0.87;\" \"P = .0038 | reduced the risk of disease progression or death by 35% (HR, 0.65; 95% CI, 0.49-0.87;\" \"HR, 0.42; 95% CI, 0.30-0.59;\" \"P < .0001 | the triplet reduced this risk by 58% (HR, 0.42; 95% CI, 0.30-0.59;\" \"83.1% and 76.5%, compared with 66.5% | were 83.1% and 76.5%, compared with 66.5% with SOC chemoimmunotherapy\" \"0.67 (95% CI, 0.39-1.14) | were 0.67 (95% CI, 0.39-1.14) and 0.69 (95% CI, 0.48-0.97)\" \"0.69 (95% CI, 0.48-0.97) | were 0.67 (95% CI, 0.39-1.14) and 0.69 (95% CI, 0.48-0.97)\" \"0.58 (95% CI, 0.32-1.02) | were 0.58 (95% CI, 0.32-1.02) and 0.35 (95% CI, 0.23-0.53)\" \"0.35 (95% CI, 0.23-0.53) | were 0.58 (95% CI, 0.32-1.02) and 0.35 (95% CI, 0.23-0.53)\" \"0.33 (95% CI, 0.18-0.56) | The HR for OS with AV vs FCR/BR was 0.33 (95% CI, 0.18-0.56)\" \"0.76 (95% CI, 0.48-1.18) | the HR for OS was 0.76 (95% CI, 0.48-1.18)\" \"0.27 (95% CI, 0.11-0.60) | The HRs for OS with AV or AVO vs FCR/BR were 0.27 (95% CI, 0.11-0.60) and 0.47 (95% CI, 0.22-0.95)\" \"0.47 (95% CI, 0.22-0.95) | and 0.47 (95% CI, 0.22-0.95), respectively\"",
+  "vid": "2026-11-22-a4c2ae8b",
+  "vt": "secondary"
  },
  "GLOW (CLL)": {
   "full": "Ibrutinib + venetoclax vs chlorambucil + obinutuzumab",
@@ -17629,7 +17851,10 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "zanubrutinib"
   ],
   "lvl": 1,
-  "v": "2026-10-23"
+  "v": "2026-11-22",
+  "quote": "\"HR, 0.42; 95% CI, 0.28-0.63 | (HR, 0.42; 95% CI, 0.28-0.63)\" \"Reader group labels: arm A vs arm B aged ≥65 years\"",
+  "vid": "2026-11-22-040c8731",
+  "vt": "secondary"
  },
  "ELEVATE-TN": {
   "full": "Acalabrutinib ± obinutuzumab vs chlorambucil + obinutuzumab",
@@ -17796,7 +18021,10 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "7+3"
   ],
   "lvl": 1,
-  "v": "2026-10-23"
+  "v": "2026-11-22",
+  "quote": "\"74.7 months vs 25.6 months | In uncensored data, median OS was 74.7 months with midostaurin versus 25.6 months with chemotherapy alone\" \"HR, 0.77; 95% CI, 0.63-0.95;\" \"P = .016 | (HR, 0.77; 95% CI, 0.63-0.95;\" \"P = .016)\"",
+  "vid": "2026-11-22-9c699d50",
+  "vt": "secondary"
  },
  "ADMIRAL": {
   "full": "Gilteritinib vs salvage chemotherapy",
@@ -17868,7 +18096,10 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "oral azacitidine"
   ],
   "lvl": 1,
-  "v": "2026-10-23"
+  "v": "2026-11-22",
+  "quote": "\"24.7 months | Median OS time was 24.7 months from the time of randomization for those receiving azacitidine.\" \"14.8 months | For those receiving the placebo, the median OS time was 14.8 months.\"",
+  "vid": "2026-11-22-dfbafffb",
+  "vt": "secondary"
  },
  "APL0406": {
   "full": "ATRA + arsenic trioxide vs ATRA + chemotherapy",
@@ -17923,8 +18154,11 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "drugs": [
    "ziftomenib"
   ],
-  "v": "2026-10-20",
-  "lvl": 1
+  "v": "2026-11-22",
+  "lvl": 1,
+  "quote": "\"21.4% (95% CI: 14.2, 30.2) | rate of 21.4% (95% CI: 14.2, 30.2)\" \"25% | Differentiation syndrome was reported in 25% of patients\" \"15% | 25% of patients, 15% at grade 3 and no grade 4-5 events\"",
+  "vid": "2026-11-22-f4c3fbfe",
+  "vt": "secondary"
  },
  "PARADIGM (AML)": {
   "full": "Azacitidine + venetoclax vs intensive chemotherapy",
@@ -17993,7 +18227,10 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "epoetin alfa"
   ],
   "lvl": 1,
-  "v": "2026-10-23"
+  "v": "2026-11-22",
+  "quote": "\"58.5% | 58.5% of patients receiving luspatercept achieved the primary endpoint of independence from red blood cell transfusions\" \"31.2% | compared to 31.2% of patients who received epoetin alfa\"",
+  "vid": "2026-11-22-874dec3d",
+  "vt": "secondary"
  },
  "MEDALIST": {
   "full": "Luspatercept vs placebo",
@@ -20635,7 +20872,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "etoposide"
   ],
   "v": "2026-10-20",
-  "lvl": 1
+  "lvl": 1,
+  "pubchk": "2026-11-22"
  },
  "SEMS": {
   "full": "Retroperitoneal lymph node dissection",
@@ -20719,7 +20957,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "cite": "Marina, Lancet Oncol 2016; Bielack, JCO 2015 (via hemonc.org)",
   "src": "https://hemonc.org/wiki/Osteosarcoma",
   "v": "2026-10-20",
-  "lvl": 1
+  "lvl": 1,
+  "pubchk": "2026-11-22"
  },
  "EORTC 80931": {
   "full": "Dose-intensified vs conventional cisplatin/doxorubicin",
@@ -20733,7 +20972,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "cite": "Lewis, JCO 2007 (via hemonc.org)",
   "src": "https://hemonc.org/wiki/Osteosarcoma",
   "v": "2026-10-20",
-  "lvl": 1
+  "lvl": 1,
+  "pubchk": "2026-11-22"
  },
  "OS2006": {
   "full": "Zoledronic acid + chemotherapy vs chemotherapy",
@@ -20747,7 +20987,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "cite": "Piperno-Neumann, Lancet Oncol 2016 (via hemonc.org)",
   "src": "https://hemonc.org/wiki/Osteosarcoma",
   "v": "2026-10-20",
-  "lvl": 1
+  "lvl": 1,
+  "pubchk": "2026-11-22"
  },
  "INT-0133": {
   "full": "Mifamurtide (L-MTP-PE) added to chemotherapy",
@@ -20828,7 +21069,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "belzutifan",
    "pembrolizumab"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "KEYNOTE-564": {
   "full": "Adjuvant pembrolizumab vs placebo",
@@ -20984,7 +21226,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "cabozantinib",
    "sunitinib"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "KEYNOTE-B61": {
   "full": "Pembrolizumab + lenvatinib",
@@ -21022,7 +21265,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "lvl": 1,
   "n": "747 (371 vs 376)",
   "cite": "ESMO 2026 3587O (final analysis)",
-  "v": "2026-10-29"
+  "v": "2026-10-29",
+  "pubchk": "2026-11-22"
  },
  "METEOR": {
   "full": "Cabozantinib vs everolimus",
@@ -21040,7 +21284,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "cabozantinib",
    "everolimus"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "LITESPARK-005": {
   "full": "Belzutifan vs everolimus",
@@ -21058,7 +21303,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "belzutifan",
    "everolimus"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "TIVO-3": {
   "full": "Tivozanib vs sorafenib",
@@ -21076,7 +21322,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "tivozanib",
    "sorafenib"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "OVHIPEC-1": {
   "full": "Interval cytoreduction ± HIPEC (cisplatin)",
@@ -21173,7 +21420,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "olaparib"
   ],
   "lvl": 1,
-  "v": "2026-10-23"
+  "v": "2026-10-23",
+  "pubchk": "2026-11-22"
  },
  "PAOLA-1": {
   "full": "Olaparib + bevacizumab maintenance vs bevacizumab",
@@ -21227,7 +21475,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "n": "407",
   "cite": "Harter, NEJM 2021",
   "src": "https://pubmed.ncbi.nlm.nih.gov/?term=DESKTOP+III+trial",
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "OCEANS": {
   "full": "Carboplatin/gemcitabine ± bevacizumab",
@@ -21315,7 +21564,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "relacorilant",
    "nab-paclitaxel"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "AURELIA": {
   "full": "Chemo ± bevacizumab",
@@ -21332,7 +21582,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "drugs": [
    "bevacizumab"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "PORTEC-2": {
   "full": "Vaginal brachytherapy vs pelvic EBRT",
@@ -21475,7 +21726,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "lenvatinib",
    "pembrolizumab"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "GARNET": {
   "full": "Dostarlimab",
@@ -21630,7 +21882,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "atezolizumab",
    "bevacizumab"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "GOG-240": {
   "full": "Chemo ± bevacizumab (and cisplatin vs topotecan doublets)",
@@ -21647,7 +21900,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "drugs": [
    "bevacizumab"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "innovaTV 301": {
   "full": "Tisotumab vedotin vs chemotherapy",
@@ -21664,7 +21918,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "drugs": [
    "tisotumab vedotin"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "KEYNOTE-689": {
   "full": "Perioperative pembrolizumab + RT/CRT vs adjuvant RT/CRT alone",
@@ -21842,7 +22097,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "drugs": [
    "nivolumab"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "KEYNOTE-040": {
   "full": "Pembrolizumab vs standard of care",
@@ -21881,7 +22137,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "Stupp"
   ],
   "lvl": 1,
-  "v": "2026-10-23"
+  "v": "2026-10-23",
+  "pubchk": "2026-11-22"
  },
  "EF-14": {
   "full": "TTFields + temozolomide vs temozolomide",
@@ -21898,7 +22155,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "drugs": [
    "temozolomide"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "CeTeG/NOA-09": {
   "full": "Lomustine + temozolomide vs temozolomide",
@@ -21933,7 +22191,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "drugs": [
    "temozolomide"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "Nordic": {
   "full": "Standard vs hypofractionated RT vs temozolomide",
@@ -22073,7 +22332,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "drugs": [
    "procarbazine/lomustine/vincristine"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "CATNON": {
   "full": "RT ± concurrent and/or adjuvant temozolomide",
@@ -22155,7 +22415,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "drugs": [
    "nivolumab"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "NADINA": {
   "full": "Neoadjuvant ipilimumab + nivolumab vs adjuvant nivolumab",
@@ -22192,7 +22453,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "drugs": [
    "pembrolizumab"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "PRADO": {
   "full": "Response-adapted therapy after neoadjuvant ipilimumab + nivolumab",
@@ -22371,7 +22633,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "dabrafenib",
    "trametinib"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "SECOMBIT": {
   "full": "Sequencing of encorafenib/binimetinib and ipilimumab/nivolumab",
@@ -22425,7 +22688,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "nivolumab",
    "ipilimumab"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "ABC": {
   "full": "Ipilimumab + nivolumab or nivolumab",
@@ -22459,7 +22723,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
    "ipilimumab",
    "nivolumab"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "C-144-01": {
   "full": "Lifileucel (TIL)",
@@ -22492,7 +22757,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "drugs": [
    "lifileucel"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "IGNYTE": {
   "full": "RP1 (vusolimogene) + nivolumab",
@@ -22573,7 +22839,8 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "drugs": [
    "pembrolizumab"
   ],
-  "lvl": 2
+  "lvl": 2,
+  "pubchk": "2026-11-22"
  },
  "ISG-STS 1001": {
   "full": "Standard vs histotype-tailored neoadjuvant chemo",
@@ -27438,7 +27705,7 @@ svg.fp{width:100%;max-width:300px;height:auto;display:block}
   "mech": "Oral selective CSF1R inhibitor; depletes CSF1-dependent macrophages that make up most of the TGCT mass"
  }
 }</script>
-<script type="application/json" id="review">{"lastScan": "2026-11-01", "nextScan": "2026-12-06", "items": [{"id": "r-fig1", "status": "open", "kind": "verify", "cards": ["KEYNOTE-522"]}, {"id": "r-fig2", "status": "open", "kind": "verify", "cards": ["ADAURA"]}, {"id": "r29", "status": "open", "kind": "verify", "cards": ["DUO-E"]}, {"id": "r42", "status": "open", "kind": "verify", "cards": ["BREAKWATER"]}, {"id": "r43", "status": "open", "kind": "verify", "cards": ["CheckMate 649"]}, {"id": "r44", "status": "open", "kind": "verify", "cards": ["CheckMate 8HW"]}, {"id": "r45", "status": "open", "kind": "verify", "cards": ["DESTINY-Gastric04"]}, {"id": "r46", "status": "open", "kind": "verify", "cards": ["HERIZON-GEA-01"]}, {"id": "r47", "status": "open", "kind": "verify", "cards": ["MATTERHORN"]}, {"id": "r48", "status": "open", "kind": "verify", "cards": ["OlympiA"]}, {"id": "r49", "status": "open", "kind": "verify", "cards": ["CheckMate 8HW"]}, {"id": "r51", "status": "open", "kind": "verify", "cards": ["AZUR-1"]}, {"id": "r53", "status": "open", "kind": "verify", "cards": ["KEYNOTE-048"]}, {"id": "r54", "status": "open", "kind": "verify", "cards": ["PAOLA-1"]}, {"id": "r89", "status": "open", "kind": "verify", "cards": ["ASCENT-04"]}, {"id": "r253", "status": "open", "kind": "verify", "cards": ["ARAMIS"]}, {"id": "r254", "status": "open", "kind": "verify", "cards": ["CROSS"]}, {"id": "r255", "status": "open", "kind": "verify", "cards": ["KEYNOTE-811"]}, {"id": "r256", "status": "open", "kind": "verify", "cards": ["PRODIGE 23"]}, {"id": "r257", "status": "open", "kind": "verify", "cards": ["PRODIGE 4/ACCORD 11"]}, {"id": "r258", "status": "open", "kind": "verify", "cards": ["PROSPER"]}, {"id": "r259", "status": "open", "kind": "verify", "cards": ["RATIONALE-305"]}, {"id": "r264", "status": "open", "kind": "verify", "cards": ["CLARINET"]}, {"id": "r266", "status": "open", "kind": "verify", "cards": ["CLEAR"]}, {"id": "r267", "status": "open", "kind": "verify", "cards": ["CLEAR"]}, {"id": "r269", "status": "open", "kind": "verify", "cards": ["CheckMate 816"]}, {"id": "r270", "status": "open", "kind": "verify", "cards": ["CheckMate 9ER"]}, {"id": "r272", "status": "open", "kind": "verify", "cards": ["EMPHACIS"]}, {"id": "r273", "status": "open", "kind": "verify", "cards": ["EPCORE DLBCL-2"]}, {"id": "r275", "status": "open", "kind": "verify", "cards": ["FLAURA2"]}, {"id": "r277", "status": "open", "kind": "verify", "cards": ["InterAACT"]}, {"id": "r279", "status": "open", "kind": "verify", "cards": ["KEYNOTE-048"]}, {"id": "r280", "status": "open", "kind": "verify", "cards": ["KEYNOTE-189"]}, {"id": "r282", "status": "open", "kind": "verify", "cards": ["KEYNOTE-522"]}, {"id": "r283", "status": "open", "kind": "verify", "cards": ["KEYNOTE-671"]}, {"id": "r284", "status": "open", "kind": "verify", "cards": ["KEYNOTE-A18"]}, {"id": "r286", "status": "open", "kind": "verify", "cards": ["MAPS"]}, {"id": "r287", "status": "open", "kind": "verify", "cards": ["MARIPOSA"]}, {"id": "r288", "status": "open", "kind": "verify", "cards": ["MIRASOL"]}, {"id": "r290", "status": "open", "kind": "verify", "cards": ["ORIOLE"]}, {"id": "r291", "status": "open", "kind": "verify", "cards": ["PEACE-1"]}, {"id": "r293", "status": "open", "kind": "verify", "cards": ["PEARLS"]}, {"id": "r295", "status": "open", "kind": "verify", "cards": ["PLATO ACT4"]}, {"id": "r297", "status": "open", "kind": "verify", "cards": ["POLARIX"]}, {"id": "r298", "status": "open", "kind": "verify", "cards": ["PRODIGE 24"]}, {"id": "r300", "status": "open", "kind": "verify", "cards": ["PROSPER"]}, {"id": "r301", "status": "open", "kind": "verify", "cards": ["PROSPER"]}, {"id": "r303", "status": "open", "kind": "verify", "cards": ["RAPIDO"]}, {"id": "r304", "status": "open", "kind": "verify", "cards": ["RUBY"]}, {"id": "r306", "status": "open", "kind": "verify", "cards": ["TALAPRO-3"]}, {"id": "r311", "status": "open", "kind": "verify", "cards": ["AMPLITUDE"]}, {"id": "r312", "status": "open", "kind": "verify", "cards": ["ATOMIC"]}, {"id": "r317", "status": "open", "kind": "verify", "cards": ["POLO"]}, {"id": "r342", "status": "open", "kind": "verify", "cards": ["ASCEMBL"]}, {"id": "r345", "status": "open", "kind": "verify", "cards": ["AUO AH 01/94"]}, {"id": "r346", "status": "open", "kind": "verify", "cards": ["EV-302"]}, {"id": "r347", "status": "open", "kind": "verify", "cards": ["GO29781"]}, {"id": "r348", "status": "open", "kind": "verify", "cards": ["HIMALAYA"]}, {"id": "r349", "status": "open", "kind": "verify", "cards": ["KEYNOTE-966"]}, {"id": "r350", "status": "open", "kind": "verify", "cards": ["PEACE-1"]}, {"id": "r351", "status": "open", "kind": "verify", "cards": ["PSMAfore"]}, {"id": "r352", "status": "open", "kind": "verify", "cards": ["ProtecT"]}, {"id": "r353", "status": "open", "kind": "verify", "cards": ["RTOG 9811"]}, {"id": "r354", "status": "open", "kind": "verify", "cards": ["STAMPEDE"]}, {"id": "r355", "status": "open", "kind": "verify", "cards": ["TE19"]}, {"id": "r356", "status": "open", "kind": "verify", "cards": ["de Wit 2001 (BEP cycles)"]}, {"id": "r357", "status": "open", "kind": "verify", "cards": ["ATOMIC-meso"]}], "auditRate": {"sampled": 4, "failed": 0, "agree": 100.0}}</script>
+<script type="application/json" id="review">{"lastScan": "2026-11-01", "nextScan": "2026-12-06", "items": [{"id": "r-fig1", "status": "open", "kind": "verify", "cards": ["KEYNOTE-522"]}, {"id": "r-fig2", "status": "open", "kind": "verify", "cards": ["ADAURA"]}, {"id": "r29", "status": "open", "kind": "verify", "cards": ["DUO-E"]}, {"id": "r42", "status": "open", "kind": "verify", "cards": ["BREAKWATER"]}, {"id": "r43", "status": "open", "kind": "verify", "cards": ["CheckMate 649"]}, {"id": "r44", "status": "open", "kind": "verify", "cards": ["CheckMate 8HW"]}, {"id": "r45", "status": "open", "kind": "verify", "cards": ["DESTINY-Gastric04"]}, {"id": "r46", "status": "open", "kind": "verify", "cards": ["HERIZON-GEA-01"]}, {"id": "r47", "status": "open", "kind": "verify", "cards": ["MATTERHORN"]}, {"id": "r48", "status": "open", "kind": "verify", "cards": ["OlympiA"]}, {"id": "r49", "status": "open", "kind": "verify", "cards": ["CheckMate 8HW"]}, {"id": "r51", "status": "open", "kind": "verify", "cards": ["AZUR-1"]}, {"id": "r53", "status": "open", "kind": "verify", "cards": ["KEYNOTE-048"]}, {"id": "r54", "status": "open", "kind": "verify", "cards": ["PAOLA-1"]}, {"id": "r89", "status": "open", "kind": "verify", "cards": ["ASCENT-04"]}, {"id": "r253", "status": "open", "kind": "verify", "cards": ["ARAMIS"]}, {"id": "r254", "status": "open", "kind": "verify", "cards": ["CROSS"]}, {"id": "r255", "status": "open", "kind": "verify", "cards": ["KEYNOTE-811"]}, {"id": "r256", "status": "open", "kind": "verify", "cards": ["PRODIGE 23"]}, {"id": "r257", "status": "open", "kind": "verify", "cards": ["PRODIGE 4/ACCORD 11"]}, {"id": "r258", "status": "open", "kind": "verify", "cards": ["PROSPER"]}, {"id": "r259", "status": "open", "kind": "verify", "cards": ["RATIONALE-305"]}, {"id": "r264", "status": "open", "kind": "verify", "cards": ["CLARINET"]}, {"id": "r266", "status": "open", "kind": "verify", "cards": ["CLEAR"]}, {"id": "r267", "status": "open", "kind": "verify", "cards": ["CLEAR"]}, {"id": "r269", "status": "open", "kind": "verify", "cards": ["CheckMate 816"]}, {"id": "r270", "status": "open", "kind": "verify", "cards": ["CheckMate 9ER"]}, {"id": "r272", "status": "open", "kind": "verify", "cards": ["EMPHACIS"]}, {"id": "r273", "status": "open", "kind": "verify", "cards": ["EPCORE DLBCL-2"]}, {"id": "r275", "status": "open", "kind": "verify", "cards": ["FLAURA2"]}, {"id": "r277", "status": "open", "kind": "verify", "cards": ["InterAACT"]}, {"id": "r279", "status": "open", "kind": "verify", "cards": ["KEYNOTE-048"]}, {"id": "r280", "status": "open", "kind": "verify", "cards": ["KEYNOTE-189"]}, {"id": "r282", "status": "open", "kind": "verify", "cards": ["KEYNOTE-522"]}, {"id": "r283", "status": "open", "kind": "verify", "cards": ["KEYNOTE-671"]}, {"id": "r284", "status": "open", "kind": "verify", "cards": ["KEYNOTE-A18"]}, {"id": "r286", "status": "open", "kind": "verify", "cards": ["MAPS"]}, {"id": "r287", "status": "open", "kind": "verify", "cards": ["MARIPOSA"]}, {"id": "r288", "status": "open", "kind": "verify", "cards": ["MIRASOL"]}, {"id": "r290", "status": "open", "kind": "verify", "cards": ["ORIOLE"]}, {"id": "r291", "status": "open", "kind": "verify", "cards": ["PEACE-1"]}, {"id": "r293", "status": "open", "kind": "verify", "cards": ["PEARLS"]}, {"id": "r295", "status": "open", "kind": "verify", "cards": ["PLATO ACT4"]}, {"id": "r297", "status": "open", "kind": "verify", "cards": ["POLARIX"]}, {"id": "r298", "status": "open", "kind": "verify", "cards": ["PRODIGE 24"]}, {"id": "r300", "status": "open", "kind": "verify", "cards": ["PROSPER"]}, {"id": "r301", "status": "open", "kind": "verify", "cards": ["PROSPER"]}, {"id": "r303", "status": "open", "kind": "verify", "cards": ["RAPIDO"]}, {"id": "r304", "status": "open", "kind": "verify", "cards": ["RUBY"]}, {"id": "r306", "status": "open", "kind": "verify", "cards": ["TALAPRO-3"]}, {"id": "r311", "status": "open", "kind": "verify", "cards": ["AMPLITUDE"]}, {"id": "r312", "status": "open", "kind": "verify", "cards": ["ATOMIC"]}, {"id": "r317", "status": "open", "kind": "verify", "cards": ["POLO"]}, {"id": "r342", "status": "open", "kind": "verify", "cards": ["ASCEMBL"]}, {"id": "r345", "status": "open", "kind": "verify", "cards": ["AUO AH 01/94"]}, {"id": "r346", "status": "open", "kind": "verify", "cards": ["EV-302"]}, {"id": "r347", "status": "open", "kind": "verify", "cards": ["GO29781"]}, {"id": "r348", "status": "open", "kind": "verify", "cards": ["HIMALAYA"]}, {"id": "r349", "status": "open", "kind": "verify", "cards": ["KEYNOTE-966"]}, {"id": "r350", "status": "open", "kind": "verify", "cards": ["PEACE-1"]}, {"id": "r351", "status": "open", "kind": "verify", "cards": ["PSMAfore"]}, {"id": "r352", "status": "open", "kind": "verify", "cards": ["ProtecT"]}, {"id": "r353", "status": "open", "kind": "verify", "cards": ["RTOG 9811"]}, {"id": "r354", "status": "open", "kind": "verify", "cards": ["STAMPEDE"]}, {"id": "r355", "status": "open", "kind": "verify", "cards": ["TE19"]}, {"id": "r356", "status": "open", "kind": "verify", "cards": ["de Wit 2001 (BEP cycles)"]}, {"id": "r357", "status": "open", "kind": "verify", "cards": ["ATOMIC-meso"]}, {"id": "r375", "status": "open", "kind": "verify", "cards": ["ADMIRAL"]}, {"id": "r376", "status": "open", "kind": "verify", "cards": ["AGILE"]}, {"id": "r377", "status": "open", "kind": "verify", "cards": ["APL0406"]}, {"id": "r378", "status": "open", "kind": "verify", "cards": ["CARTITUDE-4"]}, {"id": "r379", "status": "open", "kind": "verify", "cards": ["EORTC 80931"]}, {"id": "r380", "status": "open", "kind": "verify", "cards": ["EURAMOS-1"]}, {"id": "r381", "status": "open", "kind": "verify", "cards": ["OS2006"]}, {"id": "r382", "status": "open", "kind": "verify", "cards": ["QuANTUM-First"]}, {"id": "r383", "status": "open", "kind": "verify", "cards": ["SOLO-1"]}, {"id": "r384", "status": "open", "kind": "verify", "cards": ["Stupp/EORTC-NCIC"]}], "auditRate": {"sampled": 4, "failed": 0, "agree": 100.0}}</script>
 <script type="application/json" id="conferences">{
  "meetings": [
   {
